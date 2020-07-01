@@ -68,3 +68,27 @@ body{
    padding: 8px;
    background-color: lightgray;
 }
+
+form{
+    background-color: #eeeeee;
+    padding:16px;
+    min-width: 350px;
+    border-radius: 6px;
+    padding:20px;
+}
+textarea{
+    height: 100px;
+    width: 300px;
+}
+
+.button:hover{
+    color:firebrick;
+    background-color: beige
+}
+input, select, textarea{
+    margin-bottom:8px;
+}
+label{
+    font-weight:100;
+}
+
