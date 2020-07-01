@@ -1,17 +1,18 @@
-header {
+header{
 background-color: darkgreen;
-color: darkgoldenrod;
-font-family: cursive; 
-font-size: 30px;
+color: white;
+font-family: sans-serif; 
+font-size: 20px;
 text-align-last: center;
 padding-bottom: 10px;
+border: 2px solid darkgoldenrod;
+border-radius: 5px;
 }
-h1 {
-background-color: darkgreen;
+h1{
+margin-bottom: 4px;
+margin-top: 6px;
+font-family: cursive;
 color: darkgoldenrod;
-font-family: cursive; 
-font-size: 20px;
-align-content: center;
 }
 nav{
  background-color: #eeeeee;
