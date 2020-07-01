@@ -1,4 +1,4 @@
-header{
+.header {
 background-color: darkgreen;
 color: darkgoldenrod;
 font-family: cursive; 
@@ -6,7 +6,7 @@ font-size: 30px;
 text-align-last: center;
 padding-bottom: 10px;
 }
-h1{
+.h1{
 background-color: darkgreen;
 color: darkgoldenrod;
 font-family: cursive; 
