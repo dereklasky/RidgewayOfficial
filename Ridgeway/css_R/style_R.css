@@ -1,6 +1,7 @@
 header{
 background-color: green;
 color: white;
+padding: 3px;
 font-family: sans-serif; 
 font-size: 40px;
 }
@@ -9,7 +10,7 @@ margin: 0px;
 }
 nav{
  background-color: #eeeeee;
-padding: 0px;
+padding: 8px;
  font-family: sans-serif;
  font-weight: bold;
 }
