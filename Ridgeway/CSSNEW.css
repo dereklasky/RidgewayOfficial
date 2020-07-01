@@ -17,6 +17,9 @@ color: darkgoldenrod;
 #img-responsive {
     text-align: inherit;
 }
+#RWpics {
+    text-align-last: center;
+}
 nav {
  background-color: #eeeeee;
 padding: 8px;
