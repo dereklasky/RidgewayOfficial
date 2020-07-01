@@ -97,4 +97,6 @@ label{
 .st{
     width: 500px;
 }
-
+#img-responsive {
+    text-align: inherit;
+}
