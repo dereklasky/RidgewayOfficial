@@ -12,7 +12,7 @@
 
         <link rel = "stylesheet" href = "css_R/style_R.css">
               
-    </head> 
+	</head> 
 	
 	<body class = "row">
         <div class = "container">
@@ -21,20 +21,18 @@
             <h1 class ="name"><img src = "logo.jpg", alt="logo", width = "200" class = "image-responsive">Ridgeway Country Club</h1>
             </div>
         </header>
+
     <nav class="row navbar navbar-default">
-        
-        <div class = "navbar-header">
-                 <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">Menu
-            </button>
-            </div>
-        
-        
-        <div class = "collapse navbar-collapse" id="menu">
-            <ul class="nav navbar-nav">
-            <li><a href = "index.html">Home</a></li> 
-            <li><a href = "application.html">Application</a></li>
-            <li><a href = "waitlist.html">Waitlist</a></li>
-            <li><a href = "invoice.html" class = "dropdown-toggle" data-toggle="dropdown">Invoice<span class="caret"></span></a>
+	    <div class = "navbar-header">
+		    <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">Menu
+		    </button>
+	    </div>
+	    <div class = "collapse navbar-collapse" id="menu">
+			<ul class="nav navbar-nav">
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "application.html">Application</a></li>
+				<li><a href = "waitlist.html">Waitlist</a></li>
+			    <li><a href = "invoice.html" class = "dropdown-toggle" data-toggle="dropdown">Invoice<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href = "invoice_2.html">Invoice List</a></li>
                 </ul>
@@ -44,140 +42,104 @@
                      <li><a href = "team_rgr.html">Register</a></li>
                     <li><a href = "captain.html">Captains</a></li>
                 </ul>
-               
             </li>
         </ul>
         </div>   
     </nav>  
            
     <main>
-    <H2>Membership Application </H2> 
-     <H3>Please complete the form below to tell us about yourself and join Ridgeway Country Club!</H3>
-            
-        <form action = "confirmed.html" method ="get" id="confirm">
+    <H2>Membership Application</H2> 
+		<H3>Please complete the form below to tell us about yourself and join Ridgeway Country Club!</H3>
+		<form action = "confirmed.html" method ="get" id="confirm">
+			<label for="firstname">First Name: </label><br><input type = "text" name="firstname" id="firstname" plaeholder="First Name"><br>
+			<label for ="lastname">Last Name: </label><input type = "text" name="lastname" id="lastname" plaeholder="Last Name"><br>
+			<label for="phone">Phone Number: </label><input type = "text" name="phone" id="phone" ><br>
+			<label for="st">Street Adress: </label><input type = "text" name="st" id="st" class="st"><br>
+			<label for ="state">State:</label><select name="state" id="state">
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+			</select>
+			<label for ="zip">Zipcode:</label><input type="zipcode" name="zipcode" id="zip">
+			<label for ="country">Country:</label><select name="country" id="country">
+				<option value="Afghanistan">Afghanistan</option>
+				<option value="Albania">Albania</option>
+				<option value="Algeria">Algeria</option>
+			</select>
+			<label for="username">Username: </label><input type = "text" name="username" id="username" ><br>
+			<label for="password">Password: </label><input type = "password" name="password" id="password" ><br>
+			
+			Membership Type:
+			<input type = "radio" name="membership" id="regular" value="regular golf membership"><label for = "regular">Regular Golf Membership</label>
+			<input type = "radio" name="membership" id="social" value="social membership"><label for = "social">Social Membership</label><br>
+			
+			Reason for Application:<br>
+			<input type = "checkbox" name="golf" id="golf"> <label for = "golf">Golf </label><br>
+			<input type = "checkbox" name="Tennis" id="Tennis"> <label for = "Tennis">Tennis </label><br>
+			<input type = "checkbox" name="Weddings" id="Weddings"><label for ="Weddings"> Weddings</label><br>
+			<input type = "checkbox" name="Meetings" id="Meetings"><label for ="Meetings"> Meetings</label><br>
+			<input type = "checkbox" name="Other reasons" id="Other reasons"><label for ="Other reasons"> Other reasons</label><br>
+			If you have other reasons, what is it? (*optional) <br>
+			<textarea></textarea><br>
+			
+			<input type="radio" name = "V" id = "Married"><label for = "Married"> Married</label>
+			<input type="radio" name = "V" id = "Single"><label for = "Single"> Single</label>
+			<input type="radio" name = "V" id = "Prefer_not_to_share"><label for = "Prefer_not_to_share"> Prefer not to share </label><br>
+			<br>
+			<br>
+			<select name = "Dependents" id = "Dependents">
+				<option></option>
+				<option value =C1>  1 </option>
+				<option value =C2>  2 </option>
+				<option value =C3>  3 </option>
+				<option value =C4>  4 </option>
+				<option value =C5>  5</option>
+			</select>
+			
+			<p>
+			<hr>
+			
+			<b> Misdemeanor Offender</b>:<br>
+			<input type="radio" name = "M" id = "Yes"><label for = "Yes"> Yes</label>
+			<input type="radio" name = "M" id = "No"><label for = "No"> No</label><br>
+			
+			<b> Felony Offender</b>:<br>
+			<input type="radio" name = "F" id = "Y"><label for = "Y"> Yes</label>
+			<input type="radio" name = "F" id = "N"><label for = "N"> No</label><br>
+			
+			<b> Credit Card Information:</b><br>
+			<select name = "Card" id = "Card">
+				<option></option>
+				<option value =C1>  Amex </option>
+				<option value =C2>  Visa </option>
+				<option value =C3>  Mastercard </option>
+				<option value =C4>  Discover </option>
+				<option value =C5>  Capital One</option><br>
+				<br>
+			</select>
+			
+			</p>
+		<br>
+		<p>
+			<b> Credit Card Number:</b>
+			<br><input type ="text" maxlength="16" name = "Credit" id = "Credit"><label for = "Credit"></label>
+		</p>
+		<p>
+			<b> Credit Card Security Code:</b><br>
+			<input type ="text" maxlength="4" name = "Security" id = "Security"><label for = "Security"></label>
+		</p>
 		
-            <label for="firstname">First Name: </label><br><input type = "text" name="firstname" id="firstname" plaeholder="First Name"><br>
-            
-            <label for ="lastname">Last Name: </label><input type = "text" name="lastname" id="lastname" plaeholder="Last Name"><br>
-            
-              <label for="phone">Phone Number: </label><input type = "text" name="phone" id="phone" ><br>
-           
-             <label for="st">Street Adress: </label><input type = "text" name="st" id="st" class="st"><br>
-             
-             <label for ="state">State:</label><select name="state" id="state">
-            <option value="AL">Alabama</option>
-            <option value="AK">Alaska</option>
-            <option value="AZ">Arizona</option>
-            </select>     
-             
-             <label for ="zip">Zipcode:</label><input type="zipcode" name="zipcode" id="zip">
-            
-             
-              <label for ="country">Country:</label><select name="country" id="country">
-        <option value="Afghanistan">Afghanistan</option>
-        <option value="Albania">Albania</option>
-        <option value="Algeria">Algeria</option>
-    </select>  
-             
-             
-            <label for="username">Username: </label><input type = "text" name="username" id="username" ><br>
-            <label for="password">Password: </label><input type = "password" name="password" id="password" ><br>
-             
-           
-             
-             
-             
-             
-            Membership Type:
-                <input type = "radio" name="membership" id="regular" value="regular golf membership"><label for = "regular">Regular Golf Membership   </label>
-               <input type = "radio" name="membership" id="social" value="social membership"> <label for = "social">Social Membership</label> 
-            <br>
-            
-            Reason for Application: <br>
-        
-             <input type = "checkbox" name="golf" id="golf"> <label for = "golf">Golf </label><br> 
-            <input type = "checkbox" name="Tennis" id="Tennis"> <label for = "Tennis">Tennis </label><br> 
-            <input type = "checkbox" name="Weddings" id="Weddings"><label for ="Weddings"> Weddings</label><br>
-            <input type = "checkbox" name="Meetings" id="Meetings"><label for ="Meetings"> Meetings</label><br>
-            <input type = "checkbox" name="Other reasons" id="Other reasons"><label for ="Other reasons"> Other reasons</label><br>
-            
-          If you have other reasons, what is it? (*optional) <br>
-            <textarea></textarea><br>
-
-      		<input type="radio" name = "V" id = "Married"><label for = "Married"> Married</label>
-                 
-                 <input type="radio" name = "V" id = "Single"><label for = "Single"> Single</label>
-                 
-                 
-                  <input type="radio" name = "V" id = "Prefer_not_to_share"><label for = "Prefer_not_to_share"> Prefer not to share </label><br>
-            <br>
-  
-            <br>
-            
-            <select name = "Dependents" id = "Dependents">
-                <option>      </option>
-                <option value =C1>  1 </option>
-                <option value =C2>  2 </option>
-                <option value =C3>  3 </option>
-                <option value =C4>  4 </option>
-                <option value =C5>  5</option>
-            
-        </select>
-
-        <p></p>
-            
-            <hr>
-            
-         
-          <b> Misdemeanor Offender</b>:  <br>
-        
-         <input type="radio" name = "M" id = "Yes"><label for = "Yes"> Yes</label> 
-         <input type="radio" name = "M" id = "No"><label for = "No"> No</label><br>
-            
-        <b> Felony Offender</b>:  <br>
-         <input type="radio" name = "F" id = "Y"><label for = "Y"> Yes</label> 
-         <input type="radio" name = "F" id = "N"><label for = "N"> No</label><br>
+		<hr>
 		
-		
-		
-		<b> Credit Card Information:</b>  <br>
-    
-     <select name = "Card" id = "Card">
-                <option>      </option>
-                <option value =C1>  Amex </option>
-                <option value =C2>  Visa </option>
-                <option value =C3>  Mastercard </option>
-                <option value =C4>  Discover </option>
-                <option value =C5>  Capital One</option><br>
-         <br>
-    </select>
-</p>
-             <br>
-         <p>
-        <b> Credit Card Number:</b>
-         <br><input type ="text" maxlength="16" name = "Credit" id = "Credit"><label for = "Credit"></label> 
-           
-             </p>
-        
-           <p>
-        <b> Credit Card Security Code:</b>
-         <br><input type ="text" maxlength="4" name = "Security" id = "Security"><label for = "Security"></label> 
-           
-             </p>
-           
-        
-            <hr>
-	    	<input type="submit" class="button" value="Submit Application" id="confirm"></input>
-	    
-          </form>
-    </form>
-    </main>
-     <p></p>       
-    <footer>       
-     Ridgeway Country Club | Phone: 800-555-1234 | 444 Four Circles Dr, Daytona, FL 32114   
-    </footer>
-        </div>
-        </body> 
+		<input type="submit" class="button" value="Submit Application" id="confirm"></input>
+		</form>
+		</main>
+	
+    <footer id="footer_content>
+	<hr>
+				<p>Ridgeway Country Club | Phone: 800-555-1234 | 444 Four Circles Dr, Daytona, FL 32114</p>
+	</footer>
+	</body>
 </html>
 
 
