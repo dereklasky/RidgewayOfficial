@@ -1,0 +1,2 @@
+<!DOCSTYLE php>
+php
