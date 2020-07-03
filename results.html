@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>RCC | Captains Hub</title> 
+        
+        <!--Compiled and minified CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--jQuery CDN-->
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <!--Compiled and minified JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel = "stylesheet" href = "css_R/style_R.css">
+              
+    </head> 
+	
+	<body class = "row">
+        <div class = "container">
+        <header class = "row" >
+            <div class = "logo col-lg-12 col-md-8 col-sm-6 col-xs-12 ">
+            <h1 class ="name"><img src = "logo.jpg", alt="logo", width = "200" class = "image-responsive">Ridgeway Country Club</h1>
+            </div>
+        </header>
+    <nav class="row navbar navbar-default">
+        
+        <div class = "navbar-header">
+                 <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">Menu
+            </button>
+            </div>
+        
+        
+        <div class = "collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav">
+            <li><a href = "index.html">Home</a></li> 
+            <li><a href = "application.html">Application</a></li>
+            <li><a href = "waitlist.html">Waitlist</a></li>
+            <li><a href = "invoice.html" class = "dropdown-toggle" data-toggle="dropdown">Invoice<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href = "invoice_2.html">Invoice List</a></li>
+                </ul>
+                </li>
+            <li><a href = "team.html" class = "dropdown-toggle" data-toggle="dropdown">Team<span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                     <li><a href = "team_rgr.html">Register</a></li>
+                    <li><a href = "results.html">Captains</a></li>
+                </ul>
+               
+            </li>
+            <li><a href = "results.html">Captains Hub</a></li>
+        </ul>
+        </div>   
+    </nav>  
+            
+        
+    <main>
+        <H2>Captains Hub</H2>
+		<H5>Please submit your competition details and results below</H5><p></p>
+        <style=border: 5px solid black>
+            <form action="compdata.php">
+                <label for="yourteam">Team Name:</label>
+                <input type="text" id="yourteam" name="yourteam"><br>
+                <label for="opposingteam">Opponent:</label>
+                <input type="text" id="opposingteam" name="opposingteam"><br><br>
+                <label for="date">Competition Date:</label>
+                <input type = "date" name="date" id="date" placeholder="Date"><br><br>
+                Event type:<br>
+                <input type = "checkbox" name="golf" id="golf">
+                <label for = "golf">Golf</label>
+                <input type = "checkbox" name="Tennis" id="Tennis">
+                <label for = "Tennis">Tennis</label><br>
+                <input type = "checkbox" name="other" id="Other">
+                <label for = "other">Other</label><br><br>
+                Final Score:<br>
+                <label for="teamscore">Team Total:</label>
+                <input id="teamscore" type="number" name="teamscore" placeholder="score" min="0">
+                <label for="opponentscore">Opponent Total:</label>
+                <input id="opponentscore" type="number" name="opponentscore" placeholder="score" min="0">
+                <input type="submit" value="Submit">
+            </form>
+        </style>
+    </main>
+    
+    <footer>Ridgeway Country Club | Phone: 800-555-1234 | 444 Four Circles Dr, Daytona, FL 32114</footer>
+        </div></body> 
+        
+</html>
